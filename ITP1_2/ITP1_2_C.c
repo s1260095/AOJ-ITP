@@ -1,21 +1,21 @@
 #include<stdio.h>
 main(){
-  int a,b,c,tmp;
+  int a,b,c,rem;
   scanf("%d %d %d",&a,&b,&c);
   if(a>b){
-    tmp=a;
+    rem=a;
     a=b;
-    b=tmp;
+    b=rem;
   }
   if(b>c){
-    tmp=b;
+    rem=b;
     b=c;
-    c=tmp;
+    c=rem;
   }
   if(a>b){
-    tmp=a;
+    rem=a;
     a=b;
-    b=tmp;
+    b=rem;
   }
   printf("%d %d %d\n",a,b,c);
   return 0;

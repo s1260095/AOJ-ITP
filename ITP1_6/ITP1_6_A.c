@@ -1,19 +1,34 @@
-#include <stdio.h>
 
-int main (void)
+#include<stdio.h>
+
+int main()
+
 {
-  int i,m,w,n[105];
 
-  scanf("%d",&m);
-  i=m;
-  for ( i=0;i<m; i++)
+  int n;
+  int box[100];
+  int input;
+  int i, j;
+
+  scanf("%d", &n);
+  for(i = 0; i < n; i++)
     {
-    scanf("%d",&w);
-  n[i]=w;
-    }
-  for()
-  printf("%2d",n[i]);
 
-                         
+      scanf("%d", &input);
+      box[i] = input;
+
+    }
+
+  for(j = i - 1; j >= 0; j--)
+    {
+
+      printf("%d", box[j]);
+
+      if(j != 0) printf(" ");
+
+    }
+
+  printf("\n");
+  
   return 0;
 }
